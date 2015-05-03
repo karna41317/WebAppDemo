@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0">
+  <body>
+    <par id="id1">
+      <text src="../p6.xhtml"/>
+      <audio clipBegin="0.000s" clipEnd="49.000s" src="../audio/978-91-47-11092-6_Tranflickan_06-07.mp3"/>
+    </par>
+  </body>
+</smil>

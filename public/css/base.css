@@ -1,0 +1,178 @@
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, output, ruby, section, summary,
+time, mark, audio, video, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content:"";
+	display:table;
+	clear: both;
+}
+
+.span1, .span2, .span3, .span4,
+.span5, .span6, .span7, .span8,
+.span9, .span10, .span11, .span12 {
+	float: left;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.span1 {
+	width: 8.333%;
+}
+
+.span2 {
+	width: 16.667%;
+}
+
+.span3 {
+	width: 25%;
+}
+
+.span4 {
+	width: 33.333%;
+}
+
+.span5 {
+	width: 41.667%;
+}
+
+.span6 {
+	width: 50%;
+}
+
+.span7 {
+	width: 58.333%;
+}
+
+.span8 {
+	width: 66.667%;
+}
+
+.span9 {
+	width: 75.0%;
+}
+
+.span10 {
+	width: 83.333%;
+}
+
+.span11 {
+	width: 91.667%;
+}
+
+.span12 {
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.content-wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+ul.vertical-menu:before,
+ul.vertical-menu:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+ul.vertical-menu {
+	list-style: none;
+}
+
+ul.vertical-menu.right {
+	direction: rtl;
+}
+
+ul.vertical-menu > li {
+	float: left;
+	margin-right: 1em;
+}
+
+ul.vertical-menu.right > li {
+	float: right;
+	margin-left: 1em;
+	margin-right: 0;
+}
+
+ul.vertical-menu > li:last-child {
+	margin-left: 0;
+}
+
+ul.vertical-menu.right > li:first-child {
+	margin-right: 0;
+}
+
+@media(max-width: 767px) {
+
+    .clearfix > .span1,
+    .clearfix > .span2,
+    .clearfix > .span3,
+    .clearfix > .span4,
+    .clearfix > .span5,
+    .clearfix > .span6,
+    .clearfix > .span7,
+    .clearfix > .span8,
+    .clearfix > .span9,
+    .clearfix > .span10,
+    .clearfix > .span11,
+    .clearfix > .span12 {
+        float: none;
+        width: 100%;
+        display: block;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+}

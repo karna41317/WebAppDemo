@@ -1,0 +1,103 @@
+<!--Primary Class for Sticky Footer-->
+<div class="primary">
+
+<!--header Section-->
+<div ng-include="'/partials/header'"></div>
+<!--header Section End-->
+<!--Main Content-->
+<div class="main-content" >
+	<div class="main-content-inner" data-ng-if="!pageLoading">
+    	 <div class="myratings">
+         	  <h2>Min stjärnsida</h2>
+         	  <div class="grid">
+              	   <section class="lastread">
+                   		<div class="lastread_header"><span>Senaste lästa bok.</span></div>
+                        <div class="lastread_contnt">
+                        	 <div class="lastbook_cover">
+                             <a rel="wobble-vertical" class="wobble-vertical"  data-ng-click="readBook(lastBookRead,resumepagenumber)"><img ng-src="{{lastBookRead.coverthumb}}" width="416" alt="book cover"></a></div>
+                             <div class="lastbook_text">
+                             	  <h3>{{lastBookRead.title}}</h3>
+                                  <div class="lastbook_percentage">
+                                  	   <div class="percentage_bar" style="width:{{lastBookRead.score}}%"></div>
+                                  </div>
+                                  <a  data-ng-click="readBook(lastBookRead,resumepagenumber)" >Fortsätt läs bok</a>
+                             </div>
+                        </div>
+                   </section>
+                   
+                   <section class="starbooks">
+                   		<div class="starbooks_header"><span>Lästa böcker.</span></div>
+                        <ul>
+                        	<li data-ng-repeat="latestBook in latestBooks">
+                            	<div class="starbooks_contnt" style="margin-top:10px;">
+                                     <div class="starbooks_cover"><a href="/#/book-nav?id={{latestBook.bid}}"><img ng-src="{{latestBook.coverthumb}}" width="416" alt="cover"></a></div>
+                                     <div class="starbooks_text">
+                                          <h3>{{latestBook.title}}</h3>
+                                          <div class="starbooks_rating">
+                                          	  <img ng-repeat="n in [] | range:latestBook.rating" src="../images/level-select.png" width="32" alt="star selected">
+                                              <img ng-repeat="n in [] | range:5-latestBook.rating" src="../images/level-empty.png" width="32" alt="star selected">
+                                          </div>
+                                     </div>
+                                </div>
+                            </li>
+                        </ul>
+                   </section>
+              </div>
+              
+              <div class="grid">
+              	   <section class="starbooks minerating">
+                   		<div class="lastread_header"><span>Klassens topplista</span></div>
+                        <ul>
+                            <li data-ng-repeat="book in TopBooksClass">
+                                <div class="starbooks_contnt" >
+                                    <div class="starbooks_cover"><a href="/#/book-nav?id={{book.bid}}"><img ng-src="{{book.coverthumb}}" width="416" alt="cover"></a></div>
+                                    <div class="starbooks_text">
+                                        <h3>{{book.title}}</h3>
+                                        <div class="starbooks_rating">
+                                            <img ng-repeat="n in [] | range:book.rating" src="../images/level-select.png" width="32" alt="star selected">
+                                            <img ng-repeat="n in [] | range:5-book.rating" src="../images/level-empty.png" width="32" alt="star selected">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                   </section>
+              </div>
+              
+              <div class="grid">
+              	   <section class="starbooks overall_rating">
+                   		<div class="starbooks_header" style="padding-left:16px;"><span>Total topplista.</span></div>
+                        <ul>
+                            <li data-ng-repeat="book in TopBooks">
+                                <div class="starbooks_contnt" >
+                                    <div class="starbooks_cover"><a href="/#/book-nav?id={{book.bid}}"><img ng-src="{{book.coverthumb}}" width="416" alt="cover"></a></div>
+                                    <div class="starbooks_text">
+                                        <h3>{{book.title}}</h3>
+                                        <div class="starbooks_rating">
+                                            <img ng-repeat="n in [] | range:book.rating" src="../images/level-select.png" width="32" alt="star selected">
+                                            <img ng-repeat="n in [] | range:5-book.rating" src="../images/level-empty.png" width="32" alt="star selected">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                   </section>
+              </div>
+         </div>
+    </div>
+    </div>
+    <div class="main-content-inner" data-ng-if="pageLoading">
+<!--         Vänta medan vi laddar data ...
+ -->        <img style="margin:30% 50%;" src="/images/spinner.gif">
+    </div>
+</div>
+
+<!--Main Content End-->
+
+</div>
+<!--Primary Class for Sticky Footer End-->
+
+<!--Footer-->
+<div ng-include="'/partials/footer'"></div>
+<!--Footer End-->
+

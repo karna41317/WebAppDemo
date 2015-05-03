@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0">
+  <body>
+    <par id="id1">
+      <text src="../p24.xhtml"/>
+      <audio clipBegin="0.000s" clipEnd="26.000s" src="../audio/978-91-47-10205-1_Med_andra_ogon_24.mp3"/>
+    </par>
+  </body>
+</smil>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0">
+  <body>
+    <par id="id1">
+      <text src="../p16.xhtml"/>
+      <audio clipBegin="0.000s" clipEnd="22.000s" src="../audio/978-91-47-11091-9_Kejsarens_nya_klader_16.mp3"/>
+    </par>
+  </body>
+</smil>
