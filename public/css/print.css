@@ -1,0 +1,8 @@
+header, .pallete, .book_footer, footer, #book.draw img, #msgBox{
+    display:none !important;
+}
+@media print {
+	.wowbook-page {
+		background-color: #FFFFFF !important;
+	}
+}

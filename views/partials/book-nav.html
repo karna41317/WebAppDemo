@@ -1,0 +1,44 @@
+<div class="primary">
+
+<!--header Section-->
+<header>
+        <div class="header_inner">
+            <h1><a data-ng-click="goToHome()"><img src="../images/nav_logo.png" width="159" alt="logo"></a></h1>
+
+            <div class="logout">
+                <a href="javascript:history.back()"><img src="../images/btn-back.png" width="41" alt="icon back"> <span>Tillbaka</span></a>
+            </div>
+        </div>
+    </header>
+<!--header Section End-->
+
+
+<!--Main Content-->
+<div class="main-content">
+    <div class="main-content-inner">
+        <section class="book_start_menu">
+            <ul class="book_nav">
+                <li><a href="/book.html#?id={{bookid}}&mode=read"><img src="../images/icon-read.png" width="49" alt="read-icon"> Läs</a></li>
+                <li><a href="/book.html#?id={{bookid}}&mode=listen" onclick="playaudio()"><img src="../images/icon-listen.png" width="49" alt="read-icon"> Lyssna</a></li>
+                <li><a href="/book.html#?id={{bookid}}&mode=draw"><img src="../images/icon-paint.png" width="49" alt="read-icon"> Rita</a></li>
+                <li><a href="/book.html#?id={{bookid}}&mode=type"><img src="../images/icon-edit.png" width="49" alt="read-icon"> Skriv</a></li>
+            </ul>
+
+            <article class="book_area">
+                <a href="/book.html#?id={{bookid}}&mode=read"><img ng-src="{{cover}}" width="420" alt="book cover"></a>
+            </article>
+        </section>
+    </div>
+</div>
+<!--Main Content End-->
+
+</div>
+
+<!--Footer-->
+<div ng-include="'/partials/footer'"></div>
+<!--Footer End-->
+
+<!--All JS here-->
+<!-- <script src="../js/jquery-1.9.1.min.js"></script>
+ -->
+<!-- <script src="../js/modernizr.js"></script> -->

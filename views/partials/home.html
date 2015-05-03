@@ -1,0 +1,92 @@
+<div class="primary">
+    <div ng-include="'/partials/header'"></div>
+    <div class="main-content">
+        <div class="main-content-inner">
+            <section class="slotmachine-sort">
+                <div class="slot-btn" data-ng-click="openSlotOverlay()">
+                    <a href="javascript:void(0)">Slumpa bok <img src="../images/Slotmachine.png" width="54" alt="slot machine icon"></a>
+                </div>
+            </section>
+            <section class="featured" data-ng-if="!isTeacher && selectedLevel">
+                <div class="dotted-bar">
+                    <div class="dotted-teacher">
+                        <span>Din lärare rekommenderar denna nivå</span>
+                    </div>
+                </div>
+                <section>
+                    <div class="niva-star bookshelf-stars" ng-style="{ }">
+                        <span>{{selectedLevel}}</span>
+                    </div>
+                    <ul class="book-shelf" ng-repeat="books in level_books_display">
+                        <li ng-repeat="book in books">
+                            <a rel="wobble-vertical" class="wobble-vertical" href="/#/book-nav?id={{book.bid}}">
+                                <img ng-src="{{book.coverthumb}}" width="416" alt="basket book cover">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="library">
+                            <div class="dotted-bar">
+                    <div class="dotted-library">
+                        <span>Bibliotek</span>
+                    </div>
+                </div>
+                <section ng-repeat="levelSelf in library">
+                    <div class="niva-star bookshelf-stars" ng-style="{ }">
+                        <span>{{levelSelf.level}}</span>
+                    </div>
+                    <ul class="book-shelf" style="position:" ng-repeat="books in levelSelf.bookSelf">
+                        <li ng-repeat="book in books track by $index">
+                            <a rel="wobble-vertical" class="wobble-vertical" href="/#/book-nav?id={{book.bid}}">
+                                <img ng-src="{{book.coverthumb}}" width="416" alt="basket book cover">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+    </div>
+</div>
+<div ng-include="'/partials/footer'"></div>
+<div id="overlay-book" class="overlay">
+    <div class="toolbar">
+        <a class="close" href="#"><img src="../images/close.png" width="36" alt="close overlay">
+        </a>
+    </div>
+    <div class="book-selected">
+        <img ng-src="{{random_book_cover}}" width="336" alt="book cover">
+    </div>
+    <div class="book-btn" style="padding-left:17%;">
+        <a id="btn-back" href="#xc" data-ng-click="goToBack()"><img src="../images/btn-back.png"> Dra en annan</a>
+        <a id="btn-next" href="/#/book-nav?id={{random_book_id}}"> Välj denna bok <img src="../images/btn-next.png"></a>
+    </div>
+</div>
+<div id="overlay-inAbox" class="overlay">
+    <div class="toolbar">
+        <a class="close" href="#"><img src="../images/close.png" width="36" alt="close overlay">
+        </a>
+    </div>
+    <div class="slotmachine">
+        <ul class="slot" jslot>
+            <li><img src="../images/slot-machine-star.png" width="64" alt="star">
+            </li>
+            <li><img src="../images/slot-machine-star.png" width="64" alt="star">
+            </li>
+            <li><img src="../images/slot-machine-star.png" width="64" alt="star">
+            </li>
+        </ul>
+        <div class="slotsort-btn" data-ng-click="slidetoggle()">
+            <a href="#!" class="disabled">Ange på Nivå <span class="level-selected-slot">{{selectedLevelSlot}}</span></a>
+        </div>
+        <div class="slotselect-level" style="display:none;">
+            <ul>
+                <li ng-repeat="level in levels" ng-class = "selected" ng-click="slotupdateLevel(level)">
+                    {{level.id}}
+                </li>
+            </ul>
+        </div>
+        <input type="button" id="playFancy" value="" data-ng-click="changeRandomBook()">
+    </div>
+</div>
+<script type="text/javascript" src="/js/slot.js"></script>

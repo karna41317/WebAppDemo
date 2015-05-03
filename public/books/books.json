@@ -1,0 +1,346 @@
+{
+	"2": [{
+		"bid": "0",
+		"title": "Bias bandy",
+		"path": "02_epub/Bias_bandy",
+		"coverthumb": "books/02_epub/Bias_bandy/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/02_epub/Bias_bandy/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10199-3b1",
+		"level": "2"
+
+	}, {
+		"bid": "1",
+		"title": "Fanny passar Elin",
+		"path": "02_epub/Fanny_passar_Elin",
+		"coverthumb": "books/02_epub/Fanny_passar_Elin/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/02_epub/Fanny_passar_Elin/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10199-3b2",
+		"level": "2"
+	}, {
+		"bid": "2",
+		"title": "Försenad",
+		"path": "02_epub/Forsenad",
+		"coverthumb": "books/02_epub/Forsenad/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/02_epub/Forsenad/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10199-3b3",
+		"level": "2"
+	}, {
+		"bid": "3",
+		"title": "Hej Goja",
+		"path": "02_epub/Hej_Goja",
+		"coverthumb": "books/02_epub/Hej_Goja/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/02_epub/Hej_Goja/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10199-3b4",
+		"level": "2"
+	}, {
+		"bid": "4",
+		"title": "Huset",
+		"path": "02_epub/Huset",
+		"coverthumb": "books/02_epub/Huset/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/02_epub/Huset/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10199-3b5",
+		"level": "2"
+	}, {
+		"bid": "5",
+		"title": "Min hund",
+		"path": "02_epub/Min_hund",
+		"coverthumb": "books/02_epub/Min_hund/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/02_epub/Min_hund/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10199-3b6",
+		"level": "2"
+	}],
+	"3": [{
+		"bid": "8",
+		"title": "Britta bara tittar",
+		"path": "03_epub/Britta_bara_tittar",
+		"coverthumb": "books/03_epub/Britta_bara_tittar/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/03_epub/Britta_bara_tittar/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10200-6b1",
+		"level": "3"
+	}, {
+		"bid": "9",
+		"title": "Fannys kalas",
+		"path": "03_epub/Fannys_kalas",
+		"coverthumb": "books/03_epub/Fannys_kalas/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/03_epub/Fannys_kalas/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10200-6b2",
+		"level": "3"
+	}, {
+		"bid": "10",
+		"title": "Kan du karate",
+		"path": "03_epub/Kan_du_karate",
+		"coverthumb": "books/03_epub/Kan_du_karate/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/03_epub/Kan_du_karate/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10200-6b4",
+		"level": "3"
+	}, {
+		"bid": "11",
+		"title": "Kladdigt Kadir",
+		"path": "03_epub/Kladdigt_Kadir",
+		"coverthumb": "books/03_epub/Kladdigt_Kadir/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/03_epub/Kladdigt_Kadir/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10200-6b5",
+		"level": "3"
+	}, {
+		"bid": "12",
+		"title": "Matdrömmar",
+		"path": "03_epub/Matdrommar",
+		"coverthumb": "books/03_epub/Matdrommar/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/03_epub/Matdrommar/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10200-6b6",
+		"level": "3"
+	}, {
+		"bid": "63",
+		"title": "Jag ska spara till",
+		"path": "03_epub/Jag_ska_spara_till",
+		"coverthumb": "books/03_epub/Jag_ska_spara_till/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/03_epub/Jag_ska_spara_till/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10200-6b3",
+		"level": "3"
+	}],
+	"4": [{
+		"bid": "15",
+		"title": "Britta byter säng",
+		"path": "04_epub/Britta_byter_sang",
+		"coverthumb": "books/04_epub/Britta_byter_sang/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/04_epub/Britta_byter_sang/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10201-3b1",
+		"level": "4"
+	}, {
+		"bid": "16",
+		"title": "Elton älskar speedway",
+		"path": "04_epub/Elton_alskar_speedway",
+		"coverthumb": "books/04_epub/Elton_alskar_speedway/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/04_epub/Elton_alskar_speedway/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10201-3b2",
+		"level": "4"
+	}, {
+		"bid": "17",
+		"title": "Fem trappor upp",
+		"path": "04_epub/Fem_trappor_upp",
+		"coverthumb": "books/04_epub/Fem_trappor_upp/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/04_epub/Fem_trappor_upp/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10201-3b3",
+		"level": "4"
+	}, {
+		"bid": "18",
+		"title": "Filip i fara",
+		"path": "04_epub/Filip_i_fara",
+		"coverthumb": "books/04_epub/Filip_i_fara/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/04_epub/Filip_i_fara/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10201-3b4",
+		"level": "4"
+	}, {
+		"bid": "39",
+		"title": "Drottningens halsband",
+		"path": "04_epub_01/Drottningens_halsband",
+		"coverthumb": "books/04_epub_01/Drottningens_halsband/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/04_epub_01/Drottningens_halsband/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-11090-2b1",
+		"level": "4"
+	}, {
+		"bid": "40",
+		"title": "Duvan och myran",
+		"path": "04_epub_01/Duvan_och_myran",
+		"coverthumb": "books/04_epub_01/Duvan_och_myran/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/04_epub_01/Duvan_och_myran/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-11090-2b2",
+		"level": "4"
+	}],
+	"5": [{
+		"bid": "21",
+		"title": "Basketfeber",
+		"path": "05_epub/Basketfeber",
+		"coverthumb": "books/05_epub/Basketfeber/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/05_epub/Basketfeber/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10202-0b1",
+		"level": "5"
+	}, {
+		"bid": "22",
+		"title": "Britta lägger pussel",
+		"path": "05_epub/Britta_lagger_pussel",
+		"coverthumb": "books/05_epub/Britta_lagger_pussel/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/05_epub/Britta_lagger_pussel/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10202-0b2",
+		"level": "5"
+	}, {
+		"bid": "23",
+		"title": "Elton i speedway-skolan",
+		"path": "05_epub/Elton_i_speedway-skolan",
+		"coverthumb": "books/05_epub/Elton_i_speedway-skolan/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/05_epub/Elton_i_speedway-skolan/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10202-0b3",
+		"level": "5"
+	}, {
+		"bid": "24",
+		"title": "Här är Petter",
+		"path": "05_epub/Har_ar_Petter",
+		"coverthumb": "books/05_epub/Har_ar_Petter/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/05_epub/Har_ar_Petter/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10202-0b4",
+		"level": "5"
+	}, {
+		"bid": "25",
+		"title": "Li på klassfest",
+		"path": "05_epub/Li_pa_klassfest",
+		"coverthumb": "books/05_epub/Li_pa_klassfest/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/05_epub/Li_pa_klassfest/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10202-0b5",
+		"level": "5"
+	}, {
+		"bid": "26",
+		"title": "Poppes kompisar",
+		"path": "05_epub/Poppes_kompisar",
+		"coverthumb": "books/05_epub/Poppes_kompisar/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/05_epub/Poppes_kompisar/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10202-0b6",
+		"level": "5"
+	}],
+	"6": [{
+		"bid": "27",
+		"title": "Ester åker bredband",
+		"path": "06_epub/Ester_aker_bredband",
+		"coverthumb": "books/06_epub/Ester_aker_bredband/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/06_epub/Ester_aker_bredband/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10203-7b1",
+		"level": "6"
+	}, {
+		"bid": "28",
+		"title": "Farligt uppdrag",
+		"path": "06_epub/Farligt_uppdrag",
+		"coverthumb": "books/06_epub/Farligt_uppdrag/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/06_epub/Farligt_uppdrag/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10203-7b2",
+		"level": "6"
+	}, {
+		"bid": "29",
+		"title": "Supermamman",
+		"path": "06_epub/Supermamman",
+		"coverthumb": "books/06_epub/Supermamman/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/06_epub/Supermamman/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10203-7b3",
+		"level": "6"
+	}, {
+		"bid": "30",
+		"title": "Värsta nappet",
+		"path": "06_epub/Varsta_nappet",
+		"coverthumb": "books/06_epub/Varsta_nappet/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/06_epub/Varsta_nappet/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10203-7b4",
+		"level": "6"
+	}, {
+		"bid": "51",
+		"title": "Cao Chong och elefanten",
+		"path": "06_epub_01/Cao_Chong_och_elefanten",
+		"coverthumb": "books/06_epub_01/Cao_Chong_och_elefanten/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/06_epub_01/Cao_Chong_och_elefanten/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-11092-6b1",
+		"level": "6"
+	}, {
+		"bid": "52",
+		"title": "Svärdet i stenen",
+		"path": "06_epub_01/Svardet_i_stenen",
+		"coverthumb": "books/06_epub_01/Svardet_i_stenen/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/06_epub_01/Svardet_i_stenen/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-11092-6b2",
+		"level": "6"
+	}],
+	"7": [{
+		"bid": "31",
+		"title": "Jag har en hemlighet",
+		"path": "07_epub/Jag_har_en_hemlighet",
+		"coverthumb": "books/07_epub/Jag_har_en_hemlighet/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/07_epub/Jag_har_en_hemlighet/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10204-4b1",
+		"level": "7"
+	}, {
+		"bid": "32",
+		"title": "Så pinsamt",
+		"path": "07_epub/Sa_pinsamt",
+		"coverthumb": "books/07_epub/Sa_pinsamt/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/07_epub/Sa_pinsamt/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10204-4b3",
+		"level": "7"
+	}, {
+		"bid": "33",
+		"title": "Super Evert",
+		"path": "07_epub/Super-Evert",
+		"coverthumb": "books/07_epub/Super-Evert/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/07_epub/Super-Evert/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10204-4b2",
+		"level": "7"
+	}, {
+		"bid": "34",
+		"title": "Virre och Russe",
+		"path": "07_epub/Virre_och_Russe",
+		"coverthumb": "books/07_epub/Virre_och_Russe/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/07_epub/Virre_och_Russe/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10204-4b4",
+		"level": "7"
+	}, {
+		"bid": "55",
+		"title": "Brahmanen tigern och schakalen",
+		"path": "07_epub_01/Brahmanen_tigern_och_schakalen",
+		"coverthumb": "books/07_epub_01/Brahmanen_tigern_och_schakalen/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/07_epub_01/Brahmanen_tigern_och_schakalen/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-11093-3b1",
+		"level": "7"
+	}, {
+		"bid": "56",
+		"title": "Bukolla",
+		"path": "07_epub_01/Bukolla",
+		"coverthumb": "books/07_epub_01/Bukolla/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/07_epub_01/Bukolla/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-11093-3b2",
+		"level": "7"
+	}],
+	"8": [{
+		"bid": "35",
+		"title": "Blod",
+		"path": "08_epub/Blod",
+		"coverthumb": "books/08_epub/Blod/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/08_epub/Blod/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10205-1b1",
+		"level": "8"
+	}, {
+		"bid": "36",
+		"title": "Med andra ögon",
+		"path": "08_epub/Med andra ögon",
+		"coverthumb": "books/08_epub/Med andra ögon/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/08_epub/Med andra ögon/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10205-1b2",
+		"level": "8"
+	}, {
+		"bid": "37",
+		"title": "Plast Pia och Bonus Benny",
+		"path": "08_epub/Plast-Pia och Bonus-Benny",
+		"coverthumb": "books/08_epub/Plast-Pia och Bonus-Benny/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/08_epub/Plast-Pia och Bonus-Benny/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10205-1b3",
+		"level": "8"
+	}, {
+		"bid": "38",
+		"title": "Vargen och Rödluvan",
+		"path": "08_epub/Vargen och Rödluvan",
+		"coverthumb": "books/08_epub/Vargen och Rödluvan/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/08_epub/Vargen och Rödluvan/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-10205-1b4",
+		"level": "8"
+	}, {
+		"bid": "59",
+		"title": "Aladdins lampa",
+		"path": "08_epub_01/Aladdins_lampa",
+		"coverthumb": "books/08_epub_01/Aladdins_lampa/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/08_epub_01/Aladdins_lampa/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-11094-0b1",
+		"level": "8"
+	}, {
+		"bid": "60",
+		"title": "Den lilla sjöjungfrun",
+		"path": "08_epub_01/Den_lilla_sjojungfrun",
+		"coverthumb": "books/08_epub_01/Den_lilla_sjojungfrun/OEBPS/images/Cover_thumb.jpg",
+		"cover": "books/08_epub_01/Den_lilla_sjojungfrun/OEBPS/images/Cover.jpg",
+		"uuid": "978-91-47-11094-0b2",
+		"level": "8"
+	}]
+}

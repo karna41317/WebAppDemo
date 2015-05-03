@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0">
+  <body>
+    <par id="id1">
+      <text src="../p11.xhtml"/>
+      <audio clipBegin="0.000s" clipEnd="27.000s" src="../audio/978-91-47-11094-0_Aladdins_lampa_11-12.mp3"/>
+    </par>
+  </body>
+</smil>

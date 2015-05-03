@@ -1,0 +1,42 @@
+<div class="primary">
+    <!--header Section-->
+    <div ng-include="'/partials/header'"></div>
+    <!--header Section End-->
+    <!--Main Content-->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <section class="about">
+                <h2>Om Stjärnsvenska</h2>
+                <article>
+                    <p>Stjärnsvenska är ett systematiskt uppbyggt läsutvecklingsmaterial med böcker på 11 svårighetsnivåer. Oavsett om du använder Stjärnsvenska som ett strukturerat grundläromedel eller till elevernas fria läsning får du böcker av hög kvalitet som lockar till läsning och ger eleverna utmaningar på den nivå där de befinner sig.</p>
+                </article>
+                <article>
+                    <p>Texterna i böckerna på de olika nivåerna ska varken vara för svåra eller för lätta för läsarna. De viktigaste syftena med att ha böcker på olika nivåer är:</p>
+                </article>
+                <article>
+                    <p class ="aboutlist">att varje elev ska ha möjlighet att utveckla sitt läsande utifrån sina egna förutsättninger.</p>
+                    <p class ="aboutlist">att barnen alltid kan känna tillfredställelse i sin läsning och därmed få ökat självförtroende.</p>
+                    <p class ="aboutlist">att både lärare och elever lätt kan hitta texter som är lagom svåra.</p>
+                </article>
+                <article>
+                    <h4>Det digitala biblioteket</h4>
+                    <p>Tanken med ett digitalt bibliotek är, precis som i hela Stjärnsvenskaserien, att alla elever, oavsett var de befinner sig i läsutvecklingen, ska kunna läsa på sin nivå. Det digitala biblioteket innebär dessutom:</p>
+                    <p><br/></p>
+                    <p class ="aboutlist">Ytterligare stöd i läsinlärningen med inläst ljud till alla texter</p>
+                    <p class ="aboutlist">Större möjlighet att anpassa innehållet efter elevernas olika behov i enlighet med Specialpedagogiska skolmyndighetens rekommendationer</p>
+                    <p class ="aboutlist">Möjlighet för läraren att tilldela elever böcker på rätt nivå</p>
+                    <p class ="aboutlist">Fler sätt att arbeta med texten och bilderna i böckerna</p>
+                    <p class ="aboutlist">Större tydlighet i nivåindelning och struktur</p>
+                </article>
+                  <article data-ng-if="isTeacher">
+                        <a href="/#/teacher"><h4 style="color:blue;text-decoration: underline;">TILL LÄRAREN</h4></a>
+                </article>
+            </section>
+        </div>
+    </div>
+    <!--Main Content End-->
+</div>
+<!--Primary Class for Sticky Footer End-->
+<!--Footer-->
+<div ng-include="'/partials/footer'"></div>
+<!--Footer End-->
