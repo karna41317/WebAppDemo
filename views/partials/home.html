@@ -8,11 +8,16 @@
                 </div>
             </section>
             <section class="featured" data-ng-if="!isTeacher && selectedLevel">
+<<<<<<< HEAD
+=======
+
+>>>>>>> c9da70cdb5024e9d92e3d6bca1fc78afe6190b0a
                 <div class="dotted-bar">
                     <div class="dotted-teacher">
                         <span>Din lärare rekommenderar denna nivå</span>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <section>
                     <div class="niva-star bookshelf-stars" ng-style="{ }">
                         <span>{{selectedLevel}}</span>
@@ -32,6 +37,22 @@
                         <span>Bibliotek</span>
                     </div>
                 </div>
+=======
+                <section>                    <div class="niva-star bookshelf-stars" ng-style="{ }">
+                        <span>{{selectedLevel}}</span>
+                    </div>
+                <ul class="book-shelf" ng-repeat="books in level_books_display">
+                    <li ng-repeat="book in books">
+                        <a rel="wobble-vertical" class="wobble-vertical" href="/#/book-nav?id={{book.bid}}">
+                            <img ng-src="{{book.coverthumb}}" width="416" alt="basket book cover">
+                        </a>
+                    </li>
+                </ul>
+                </section>
+            </section>
+
+            <section class="library">
+>>>>>>> c9da70cdb5024e9d92e3d6bca1fc78afe6190b0a
                 <section ng-repeat="levelSelf in library">
                     <div class="niva-star bookshelf-stars" ng-style="{ }">
                         <span>{{levelSelf.level}}</span>
