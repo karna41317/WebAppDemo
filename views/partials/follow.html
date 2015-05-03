@@ -1,0 +1,67 @@
+Primary Class for Sticky Footer-->
+<div class="primary">
+    <!--header Section-->
+    <div ng-include="'/partials/header'"></div>
+    <!--header Section End-->
+    <!--Main Content-->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="assign-content">
+                <h2>Uppföljning av dina elever</h2>
+                <aside class="left-sidebar">
+                    <h3>Vem/vilka?</h3>
+                    <div class="checkboxes_class">
+                        <div class="">
+                            <select class="chooseClass" ng-options="class.GroupName for class in classes track by class.GroupUUID"
+                                ng-model="selectedClass" ng-change="updateClass()">
+                                <option value="">Grupp</option>
+                            </select>
+                        </div>
+                        <div class="list">
+                            <li class="list_item" data-ng-click="selectedStudentClick(groupStudent)" ng-repeat="groupStudent in groupStudents">
+                                <label class="label--checkBox">{{groupStudent.name}}
+                                    <input type="checkbox" class= "checkBox" ng-model="groupStudent.Selected"/>
+                                </label>
+                            </li>
+                        </div>
+                    </div>
+                    </aside><!--Follow Sidebar-->
+                    <!--          <div class="follow_main" data-ng-show="!isStudentSelected">
+                        Vänligen välj en elev!
+                    </div> -->
+                    <div class="follow_main" id="loader-div" style="display: none">
+                        <img style="margin:30% 50%" src="/images/spinner.gif">
+                    </div>
+
+
+
+                    
+                    <div class="follow_main" id="loaded-div" data-ng-show="isStudentSelected">
+                        <h3 class="follow-title">{{selectedStudent.name}}</h3>
+                        <article class="levelandbooksnumb">
+                            <p>Är på nivå <span class="levelstar">{{selectedStudent.level}}</span></p>
+                            <p>Antal lästa böcker: <span>{{totalBooksRead}}st</span></p>
+                            <p>Antal avslutade böcker: <span>{{completedBooks}}st</span></p>
+                        </article>
+                        
+                        <section class="followbooks">
+                            <ul>
+                                <li ng-repeat="book in BooksToShow">
+                                    <a href="/#/book-nav?id={{book.bid}}">
+                                        <img width="416" alt="book cover" ng-src="{{book.coverthumb}}">
+                                        <span class="bookname">{{book.title}}</span>
+                                        <span  ng-if="book.score==100"  class="bookcomplete bookcompleted">{{book.score}}% Klar {{resumepagenumber}}</span>
+                                        <span  ng-if="book.score!=100" class="bookcomplete">{{book.score}}% Klar</span></a></li>
+                                    </ul>
+                                </section>
+                                
+                                </div><!--Follow Main Content-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--Main Content End-->
+                </div>
+                <!--Primary Class for Sticky Footer End-->
+                <!--Footer-->
+                <div ng-include="'/partials/footer'"></div>
+                <!--Footer End

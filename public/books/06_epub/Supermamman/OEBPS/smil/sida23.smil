@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0">
+  <body>
+    <par id="id1">
+      <text src="../p23.xhtml"/>
+      <audio clipBegin="0.000s" clipEnd="14.000s" src="../audio/978-91-47-10203-7_Supermamman_23.mp3"/>
+    </par>
+  </body>
+</smil>

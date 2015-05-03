@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0">
+  <body>
+    <par id="id1">
+      <text src="../p4.xhtml"/>
+      <audio clipBegin="0.000s" clipEnd="8.000s" src="../audio/978-91-47-10199-3_Nisse_hinner_inte_med_04.mp3"/>
+    </par>
+  </body>
+</smil>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0">
+  <body>
+    <par id="id1">
+      <text src="../p14.xhtml"/>
+      <audio clipBegin="0.000s" clipEnd="23.000s" src="../audio/978-91-47-11091-9_Darfor_har_giraffen_sa_lang_hals_14-15.mp3"/>
+    </par>
+  </body>
+</smil>

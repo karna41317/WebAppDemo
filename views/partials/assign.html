@@ -1,0 +1,230 @@
+<!--Primary Class for Sticky Footer-->
+<div class="primary">
+    <!--header Section-->
+    <div ng-include="'/partials/header'"></div>
+    <!--header Section End-->
+    <!--Main Content-->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="assign-content">
+                <h2>Välj nivå för dina elever</h2>
+                <aside class="left-sidebar">
+                    <h3>Vem/vilka?</h3>
+                    <div class="checkboxes_class">
+                        
+                        <div class="">
+                            <select class="chooseClass" ng-options="class.GroupName for class in classes track by class.GroupUUID"
+                                ng-model="selectedClass" ng-change="updateClass()">
+                                <option value="">Grupp</option>
+                            </select>
+                        </div>
+                       
+                        <div class="ng-hide" ng-show="selectedClass">
+                            <div class="list">
+                                <li class="list_item">
+                                    <label class="label--checkBox" >Markera alla
+                                        <input type="checkBox" class= "checkBox" ng-model="selectedAll" ng-click="checkAll()"/></label>
+                                    </li>
+                                </div>
+                                <div class="list" style="margin:0 0 0 30px">
+                                    <li class="list_item" ng-repeat="groupStudent in groupStudents">
+                                        <label class="label--checkBox">{{groupStudent.name}}
+                                            <input type="checkBox" class= "checkBox" ng-model="groupStudent.Selected" data-ng-click="checkSelectedTab(groupStudent)"/>
+                                        </label>
+                                    </li>
+                                </div>  </div>
+                            </div>
+                        </aside>
+
+                        <!--Assign Sidebar-->
+                        <div class="assign_main ng-hide" ng-show="selectedClass && showAssignLevelTab">
+                            <ul class='tabs'>
+                                <!--                         <li class ="ng-hide"><a href='#tab1'>Tilldela böcker</a></li>
+                                -->
+                                <!-- <li><a href='#tab2'>Tilldela nivåer</a></li> -->
+                            </ul>
+                            <!--Tab Nav-->
+                            <!--                 <div id='tab1' class ="ng-hide">
+                                <div class="tabs_section">
+                                    <aside class="lavel-sidebar">
+                                        <h3>Nivåer</h3>
+                                        <ul>
+                                            <li ng-click="updateLevel(level)" ng-repeat="level in levels">
+                                                <input type="checkbox" name="{{level.label}}" value="{{level.id}}"><a>{{level.label}}</a>
+                                            </li>
+                                        </ul>
+                                    </aside>
+                                    <section class="level-books">
+                                        <h3>{{selectedLevelLabel}}</h3>
+                                        <div style="color: red">{{assignBooksError}}</div>
+                                        <div style="color: green">{{assignBooksSuccess}}</div>
+                                        <a id="marktoggle" data-ng-model="selectedAllBooks" ng-click="checkAllBooks()" >Markera alla böcker</a>
+                                        <ul>
+                                            <li id="book-{{book.bid}}" data-ng-click="updateSelectedBooks(book)" ng-repeat="book in books">
+                                                <input type="checkbox">
+                                                <a><img ng-src="{{book.coverthumb}}" style="max-width: 42px;margin-right: 20px " width="416" alt="book cover">
+                                                <span><b>{{book.title}}</b></span></a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="tab_footer">
+                                    <a data-ng-click="assignBooks()">Tilldela markerade böcker</a>
+                                </div>
+                            </div> -->
+                            <!--Tab Section 1-->
+                            <div id='tab2' class="tabs_section sec_tab">
+                                <h3>Nivåer</h3>
+
+                                <ul>
+                                    <li  data-ng-click="selecteAssignLevel(level)" ng-repeat="level in levels">
+                                        <input type="checkbox" name="levelbook {{level.id}}"  value="levelbook {{level.id}}"><a >{{level.id}}</a>
+                                    </li>
+                                </ul>
+             
+                                <hr><hr/>
+                            <div class="tab_footer">
+                                   <div class="level-notification default" ng-class="{fade: startFade}">                           
+
+                                <div style="color: red;margin:4% 0">{{assignLevelError}}</div>
+                                <div style="color: green;font-weight: 700" ng-if="assignLevelSuccess">
+                                    <img src="../images/mark.png"><span style="vertical-align: super;
+  margin: 10px;">{{assignLevelSuccess}}</span>
+                                </div>
+                            </div> 
+                            </div>
+                            </div>
+                            <!--Tab Section 2-->
+                        </div>
+                        <!--Assign Mian Content-->
+                    </div>
+                </div>
+            </div>
+            <!--Main Content End-->
+        </div>
+        <!--Primary Class for Sticky Footer End-->
+        <!--Footer-->
+        <div ng-include="'/partials/footer'"></div>
+        <!--Footer End-->
+        <!--Overlay Section Here-->
+        <!--Overlay Section Here End-->
+        <!--All JS here-->
+        <script src="../js/jquery-1.9.1.min.js"></script>
+        <script>
+        //Select Nivåer
+        $(function() {
+        $('.lavel-sidebar ul li').click(function(e) {
+        $(".lavel-sidebar ul li").each(function(index, element) {
+        $(element).removeClass('selected');
+        $(element).find("input:checkbox").prop('checked', false);
+        });
+        if ($(this).hasClass('selected')) {
+        $(this).removeClass('selected');
+        $(this).find("input:checkbox").prop('checked', false);
+        } else {
+        $(this).addClass('selected');
+        $(this).find("input:checkbox").prop('checked', true);
+        }
+        });
+        });
+        //multiselect Lavel Books
+        // Tab 2 multiselect Lavel
+        $(function() {
+        $('.tabs_section.sec_tab ul li').click(function(e) {
+        $(".tabs_section.sec_tab ul li").each(function(index, element) {
+        $(element).removeClass('selected');
+        $(element).find("input:checkbox").prop('checked', false);
+        });
+        if ($(this).hasClass('selected')) {
+        $(this).removeClass('selected');
+        $(this).find("input:checkbox").prop('checked', false);
+        } else {
+        $(this).addClass('selected');
+        $(this).find("input:checkbox").prop('checked', true);
+        }
+        });
+        });
+        //check and uncheck sidebar checkboxes
+        function do_this() {
+        var checkboxes = document.getElementsByName('approve[]');
+        var button = document.getElementById('toggle');
+        if (button.value == 'Markera alla') {
+        for (var i in checkboxes) {
+        checkboxes[i].checked = 'FALSE';
+        }
+        button.value = 'Avmarkera alla'
+        } else {
+        for (var i in checkboxes) {
+        checkboxes[i].checked = '';
+        }
+        button.value = 'Markera alla';
+        }
+        }
+        // Jquery Tabs
+        $(document).ready(function() {
+        $('ul.tabs').each(function() {
+        var $active, $content, $links = $(this).find('a');
+        $active = $($links.filter('[href="' + location.hash + '"]')[0] || $links[0]);
+        $active.addClass('active');
+        $content = $($active[0].hash);
+        $links.not($active).each(function() {
+        $(this.hash).hide();
+        });
+        $(this).on('click', 'a', function(e) {
+        $active.removeClass('active');
+        $content.hide();
+        $active = $(this);
+        $content = $(this.hash);
+        $active.addClass('active');
+        $content.show();
+        e.preventDefault();
+        });
+        });
+        });
+        // Iterate over each Select element
+        $('.select_classes select').each(function() {
+        var $this = $(this),
+        numberOfOptions = $(this).children('option').length;
+        // Hides the select element
+        $this.addClass('s-hidden');
+        // Wrap the select element in a div
+        $this.wrap('<div class="select"></div>');
+        // Insert a styled div to sit over the top of the hidden select element
+        $this.after('<div class="styledSelect"></div>');
+        // Cache the styled div
+        var $styledSelect = $this.next('div.styledSelect');
+        // Show the first select option in the styled div
+        $styledSelect.text($this.children('option').eq(0).text());
+        // Insert an unordered list after the styled div and also cache the list
+        var $list = $('<ul />', {
+            'class': 'options'
+            }).insertAfter($styledSelect);
+            // Insert a list item into the unordered list for each select option
+            for (var i = 0; i < numberOfOptions; i++) {
+            $('<li />', {
+                text: $this.children('option').eq(i).text(),
+                rel: $this.children('option').eq(i).val()
+                }).appendTo($list);
+                }
+                // Cache the list items
+                var $listItems = $list.children('li');
+                // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
+                $styledSelect.click(function(e) {
+                e.stopPropagation();
+                $('div.styledSelect.active').each(function() {
+                $(this).removeClass('active').next('ul.options').hide();
+                });
+                $(this).toggleClass('active').next('ul.options').toggle();
+                });
+                $listItems.click(function(e) {
+                e.stopPropagation();
+                $styledSelect.text($(this).text()).removeClass('active');
+                $this.val($(this).attr('rel'));
+                $list.hide();
+                });
+                $(document).click(function() {
+                $styledSelect.removeClass('active');
+                $list.hide();
+                });
+                });
+                </script>

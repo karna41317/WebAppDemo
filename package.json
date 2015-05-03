@@ -1,0 +1,22 @@
+{
+  "name": "Stjrnsvenska",
+  "version": "0.0.1",
+  "description": "Bookshelf App",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.0.0",
+    "ejs": "latest",
+    "connect-flash": "~0.1.1",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.0",
+    "request": "latest"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+  },
+  "author": "",
+}

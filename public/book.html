@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			(function(H) {
+				H.className = H.className.replace(/\bno-js\b/, 'js')
+			})(document.documentElement)
+		</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=1024, user-scalable=no">
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32" />
+		<link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../css/wow_book.css" />
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+		<script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../js/modernizr.js"></script>
+		<script src="../js/sketch.js" type="text/javascript"></script>
+		<script src="../js/angular/angular.js"></script>
+		<script type="text/javascript" src="../js/angular/cookies.js"></script>
+		<script type="text/javascript" src="../js/app/main-page-app.js"></script>
+		<script src="../js/controllers/book-page-controller.js"></script>
+		<title>Stjärnsvenska</title>
+
+	</head>
+	<body  ng-app="bookApp" ng-controller="bookPageController">
+		<div class="primary">
+			<!--header Section-->
+			<header class ="tabhide">
+				<div class="header_inner">
+					<h1><a href="/#/"><img src="../images/nav_logo.png" width="159" alt="logo"></a></h1>
+					<div class="logout">
+						<a href="javascript:history.back()"><img src="../images/btn-back.png" width="41" alt="icon back">
+							<span>Tillbaka</span>
+						</a>
+					</div>
+				</div>
+			</header>
+			<!--header Section End-->
+			<!--Main Content-->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<section class="book_start_menu">
+						<div id="container">
+							<div id="main" ng-switch="mode">
+								<div class="pallete" ng-switch-when="draw">
+									<div class="paint_tools">
+										<div class="row">
+											<div class="size-item">
+												<a href="#" data-size="3"><img class ="selected_image" src="../images/small.png" width="49" alt=""> </a>
+											</div>
+											<div class="size-item">
+												<a href="#" data-size="5"><img class ="selected_image" src="../images/medium.png" width="49" alt=""> </a>
+											</div>
+											<div class="size-item">
+												<a href="#" data-size="10"><img class ="selected_image" src="../images/large.png" width="49" alt=""> </a>
+											</div>
+										</div>
+									</div>
+									<div class="eraser">
+										<div class="row">
+											<div class="color-item">
+												<a href="#" class ="eraser" data-size="10" data-color="#ffffff">
+													<img class ="selected_image" src="../images/eraser.png" width="49" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- Remove #simple_sketch-->
+									<div class="color_tools">
+										<div class="row">
+											<div class="color-item">
+												<a class="colors selected_color" href="#" data-color="#8E3B5B" style="background: #8E3B5B;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors selected_color" href="#" data-color="#FD69A2" style="background: #FD69A2;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors selected_color" href="#" data-color="#FEBDD6" style="background: #FEBDD6;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors selected_color" href="#" data-color="#8D9C44" style="background: #8D9C44;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors selected_color" href="#" data-color="#E0FD44" style="background: #E0FD44;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors selected_color" href="#" data-color="#F1FEAF" style="background: #F1FEAF;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors selected_color" href="#" data-color="#4471B7" style="background: #4471B7;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors selected_color" href="#" data-color="#5B9CFC" style="background: #5B9CFC;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors selected_color" href="#" data-color="#C3DAFD" style="background: #C3DAFD;"></a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#C05051" style="background: #C05051;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#FC6869" style="background: #FC6869;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#FDB6B6" style="background: #FDB6B6;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#49A749" style="background: #49A749;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#71FD6E" style="background: #71FD6E;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#B7FEB6" style="background: #B7FEB6;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#000000" style="background: #000000;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#A8A8A8" style="background: #A8A8A8;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#EFEFEF" style="background: #EFEFEF;"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="pallete" ng-switch-when="type">
+									<div class="type_tools">
+										<div class="row">
+											<div class="font-item">
+												<a href="#" data-font="Open Sans"><img src="../images/text1.png" width="49" alt=""> </a>
+											</div>
+											<div class="font-item">
+												<a href="#" data-font="Patua One"><img src="../images/text2.png" width="49" alt=""> </a>
+											</div>
+											<div class="font-item">
+												<a href="#" data-font="Times new roman"><img src="../images/text3.png" width="49" alt=""> </a>
+											</div>
+										</div>
+									</div>
+									<div class="color_tools">
+										<div class="row">
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#46a843" style="background: #46a843;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#8f395b" style="background: #8f395b;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#c44f4f" style="background: #c44f4f;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#ff66a2" style="background: #ff66a2;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#dfff2b" style="background: #dfff2b;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#6bff66" style="background: #6bff66;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#f1ffab" style="background: #f1ffab;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#b5ffb3" style="background: #b5ffb3;"></a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#ff6666" style="background: #ff6666;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#FC6869" style="background: #FC6869;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#FDB6B6" style="background: #FDB6B6;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#49A749" style="background: #49A749;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#416fb9" style="background: #416fb9;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#000000" style="background: #000000;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#5899ff" style="background: #5899ff;"></a>
+											</div>
+											<div class="color-item">
+												<a class="colors" href="#" data-color="#efefef" style="background: #806C6C;"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="book-view">
+									<div id="book" ng-class="{draw: mode=='draw'}">
+									</div>
+								</div>
+							<audio id="audio-player" preload="auto"></audio>
+						</div>
+						<div class="book_footer">
+							<div class="print_clear" ng-if="mode == 'draw' || mode == 'type'">
+								<a href="#" id="clear_canvas"><img src="../images/delete.png" width="41">
+									<span>Rensa</span>
+								</a>
+								<a rel="leanModal" name="proceed" href="javascript:if(window.print)window.print()"><img src="../images/skriv-ut.png" width="41" >
+									<span>Skriv ut</span>
+								</a>
+							</div>
+
+
+							<nav ng-class="{booknav_edit: mode=='draw' || mode == 'type',booknav_read: mode=='read' || mode == 'listen'}">
+								<ul class="playleft">		<li ng-if="mode == 'read'">
+										<a id='play_left' title='Spela'>Spela</a>
+									</li></ul>
+								<ul class="booknav-center">
+									<li ng-if="mode == 'listen'">
+										<a id='play' title='Spela'>Spela</a>
+									</li>
+							<!-- 		<li ng-if="mode == 'read'">
+										<a id='play_left' title='Spela'>Spela</a>
+									</li> -->
+									<li>
+										<a id='back' href="" title='Föregående sida'>Föregående sida</a>
+									</li>
+									<li id='thumbs' >
+										<input type="text" id="pager_nav" alt="2" readonly="readonly" />
+									</li>
+									<li>
+										<a id='next' data-action="next" href="#" title='Nästa sida'>Nästa sida</a>
+									</li>
+									<li>
+										<div class="wowbook-page-number"></div>
+									</li>
+									<li>
+										<a id='fullscreen' href="#" title='Fullskärm'>Fullskärm</a>
+									</li>
+									
+							<!-- 		<li ng-if="mode == 'read'">
+										<a id='play_right' title='Spela'>Spela</a>
+									</li> -->
+								</ul>
+										<ul class="playright">		<li ng-if="mode == 'read'">
+										<a id='play_right' title='Spela'>Spela</a>
+									</li></ul>
+								<ul class ="goback"><li><a id ="goback" href="javascript:history.back()"></a></li></ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+<div id='thumbs_holder'>
+</div>
+				<!--! end of #container -->
+			</section>
+		</div>
+	</div>
+	<!--Main Content End-->
+</div>
+
+<!--Footer-->
+<footer class ="tabhide">
+	<div class="footer-inner">
+		<h3><a href="#"><img src="../images/footer.png" width="139" alt="footer logo"></a></h3>
+		<ul>
+			<li><a href="#">Kontakt</a>
+		</li>
+		<li><a href="#">Copyright Liber 2014</a>
+	</li>
+</ul>
+</div>
+</footer>
+
+<!--Footer End-->
+<script src="../js/wow_book.min.js" type="text/javascript"></script>
+<script src="../js/plugins.js" type="text/javascript"></script>
+</body>
+</html>
